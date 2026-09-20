@@ -19,7 +19,7 @@ browser can't drive reliably for an unattended daily job.
   `<title>`/`<h1>`.
 - Only whole-aircraft-for-sale listings are published. Each ad's title must match a
   recognized Extra model number (200, 230, 260, 300, 330, 400, optionally with a
-  factory variant suffix like L, LC, LX, SC, SR, or NG - see `_MODEL_RE` in
+  factory variant suffix like L, LC, LX, SC, SR, SX, or NG - see `_MODEL_RE` in
   `scraper/barnstormers.py`); titles that read as parts, accessories, services, or
   raffles are dropped. Every surviving listing's title is rewritten to a canonical
   **`YEAR Extra MODEL`** form when the ad states a model year (e.g. `2016 Extra 330LX`),

@@ -37,13 +37,13 @@ GENERIC_SITE_TITLE_SNIPPET = "barnstormers.com find aircraft"
 
 # Known Extra Aircraft model numbers (200, 230, 260, 300, 330, 400), each
 # optionally followed by its factory variant suffix (L, LC, LP, LT, LX, S,
-# SC, SR, LE, NG - e.g. "330LX", "300SC", "330NG") and optionally preceded
-# by the "EA-" type-certificate prefix ("EA-300"). No trailing \b
-# requirement on the suffix beyond what the group itself anchors, since
-# real titles often run the code straight into the next word
-# ("330LXaerobatic") - a leading \b is enough to anchor it.
+# SC, SR, SX, LE, NG - e.g. "330LX", "300SC", "330SX", "330NG") and
+# optionally preceded by the "EA-" type-certificate prefix ("EA-300"). No
+# trailing \b requirement on the suffix beyond what the group itself
+# anchors, since real titles often run the code straight into the next
+# word ("330LXaerobatic") - a leading \b is enough to anchor it.
 _MODEL_RE = re.compile(
-    r"\b(?:ea[\s-]?)?(200|230|260|400|330|300)(l[cptx]?|s[cr]?|le|ng)?\b",
+    r"\b(?:ea[\s-]?)?(200|230|260|400|330|300)(l[cptx]?|s[crx]?|le|ng)?\b",
     re.IGNORECASE,
 )
 
